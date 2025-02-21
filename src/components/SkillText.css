@@ -1,0 +1,52 @@
+/* SkillText.css */
+
+/* Container principal */
+.skill-text-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Première animation */
+  .welcome-box {
+    padding: 8px 7px;
+    border: 1px solid rgba(112, 66, 248, 0.55);
+    opacity: 0.9;
+  }
+  
+  /* Icône Sparkles */
+  .welcome-box .sparkles-icon {
+    color: #b49bff;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  /* Texte "Think better with Next js 13" */
+  .welcome-text {
+    font-size: 13px;
+  }
+  
+  /* Texte principal */
+  .main-text {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Texte secondaire */
+  .secondary-text {
+    font-family: cursive;
+    font-size: 20px;
+    color: #e1e1e1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  

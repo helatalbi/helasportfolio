@@ -1,0 +1,139 @@
+#about {
+  justify-content: space-between; /* Adjusts the spacing between the elements */
+  align-items: center; /* Vertically aligns the items in the center */
+  height: 100vh; /* Makes the section take the full height of the viewport */
+  margin: 10px;
+  top: -90px
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Empêche l'image de rétrécir */
+  width: 600px;
+  animation: keyframes-floating-img 10s ease-in-out infinite;
+}
+.image {
+  width: 900px;
+  animation: keyframes-floating-img 10s ease-in-out infinite;
+}
+
+@keyframes keyframes-floating-img {
+  0% {
+    transform: translate(-2%, 2%) scaleY(0.95) rotate(-5deg);
+  }
+
+  50% {
+    transform: translate(2%, -2%) scaleY(1) rotate(5deg);
+  }
+
+  100% {
+    transform: translate(-2%, 2%) scaleY(0.95) rotate(-5deg);
+  }
+}
+
+
+.container {
+  display: flex;
+  align-items: center; /* Aligner verticalement */
+  justify-content: space-between; /* Espacer les éléments */
+  margin-top: 120px;
+  margin-right: 280px;
+}
+
+.Welcome-box {
+  display: flex;
+  align-items: center; /* Centrer le texte et l'icône */
+  border: 1px solid rgba(112, 66, 248, 0);
+  opacity: 0.9;
+}
+
+.Welcome-text {
+  font-size: 25px;
+  color: white;
+}
+
+.SparklesIcon {
+  color: #b49bff;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+
+.TextAnim {
+  flex: 1; /* Permet à l'animation de prendre tout l'espace restant */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.info-box{
+  margin-right: 100px;
+}
+/* 🎯 Media Queries pour l'adaptation aux petits écrans */
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-box {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .image-container {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .Welcome-box {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Welcome-text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about {
+    height: auto;
+    padding: 40px 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-box {
+    margin-right: 0;
+  }
+
+  .Welcome-text {
+    font-size: 20px;
+  }
+
+  .SparklesIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .image-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .image {
+    width: 100%;
+  }
+}

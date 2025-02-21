@@ -1,0 +1,46 @@
+.about-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .background-video-nav {
+    position: absolute;
+    top: -380px; /* Ajuste la position verticale */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    object-fit: cover;
+    transform: rotate(180deg); /* Rotation de la vidéo */
+  }
+  /* 🎯 Media Queries pour l'adaptation aux petits écrans */
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .background-video-nav {
+    top: -280; /* Ajustement pour éviter le décalage */
+    height: auto;
+    min-height: 100vh; /* Assurer une couverture complète de l'écran */
+    transform: none; /* Supprime la rotation sur mobile si nécessaire */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .background-video-nav {
+    top: 0;
+    min-height: 100vh;
+  }
+}
+
+  

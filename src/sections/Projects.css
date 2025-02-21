@@ -1,0 +1,35 @@
+/* Par défaut : 3 projets par ligne */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 projets par ligne */
+    gap: 100px; /* Espacement entre les projets */
+    padding: 10px;
+    width: 80%;
+    margin-left: 150px;
+    justify-items: center; /* Centrer les projets horizontalement */
+    align-items: center;   /* Centrer les projets verticalement */
+  }
+  
+  /* Sur les écrans moyens (tablettes) : 2 projets par ligne */
+  @media (max-width: 1024px) {
+    .project-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 projets par ligne */
+      gap: 50px;
+      margin-left: 100px;
+    }
+  }
+  
+  /* Sur les petits écrans (mobiles) : 1 projet par ligne avec taille réduite */
+  @media (max-width: 768px) {
+    .project-container {
+      grid-template-columns: 1fr; /* 1 projet par ligne */
+      gap: 30px;
+      margin-left: 20px;
+    }
+  
+    .project-container .project {
+      width: 90%; /* Réduit la taille des projets */
+      margin: 0 auto;
+    }
+  }
+  

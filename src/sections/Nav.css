@@ -1,0 +1,90 @@
+/* Nav.css */
+.nav-container {
+  width: 95%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 4px 6px rgba(42, 14, 97, 0.3);
+  background-color: rgba(3, 0, 20, 0.09);
+  backdrop-filter: blur(5px);
+  z-index: 50;
+  padding: 0 10px;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-title {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #d1d5db;
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(112, 66, 248, 0.38);
+  background-color: rgba(3, 0, 20, 0.37);
+  margin-right: 15px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #d1d5db;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .nav-title {
+    display: block;
+  }
+}
+.nav-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-icon {
+  color: #fff; /* Change la couleur si besoin */
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.nav-icon:hover {
+  color: #0077b5; /* Couleur de LinkedIn par défaut */
+}

@@ -1,0 +1,75 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Augmenté pour plus d'espace entre les sections */
+  height: 100vh; /* Utilise 100% de la hauteur de la fenêtre */
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0; /* Ajouté pour avoir plus d'espace intérieur */
+  top: -40px
+}
+
+/* Texte */
+.skill-text-container {
+  margin-top: 2rem; /* Ajouté plus de marge */
+}
+
+.skill-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1.5rem; /* Augmenté pour plus d'espace entre les groupes de compétences */
+  gap: 1.5rem; /* Augmenté pour plus d'espace entre les éléments */
+  align-items: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  opacity: 0.3; /* Ajuste l'opacité selon l'effet désiré */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.video-content {
+  width: 120%;
+  height: auto;
+  object-fit: cover;
+}
+/* Réduire la taille des compétences sur les petits écrans */
+@media (max-width: 1024px) {
+  .skill-item-container img {
+    width: 70px !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-item-container img {
+    width: 50px !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-item-container img {
+    width: 40px !important;
+    height: auto !important;
+  }
+
+  /* Réduire les espacements pour optimiser l'affichage sur mobile */
+  .skill-item-container {
+    gap: 0.8rem;
+  }
+}
+
+
