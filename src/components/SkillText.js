@@ -1,8 +1,7 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from '../components/motion'
-import { SparklesIcon } from '@heroicons/react/24/solid'
+import { slideInFromLeft, slideInFromRight } from '../components/motion'
 import './SkillText.css'; // Importation du fichier CSS
 
 const SkillText = () => {
